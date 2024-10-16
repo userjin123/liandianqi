@@ -11,6 +11,7 @@ def click_mouse():
         if clicking:
             try:
                 mouse_controller.press(mouse.Button.x2)  # 模拟按下事件
+                time.sleep(0.05)
                 mouse_controller.release(mouse.Button.x2)
             except Exception as e:
                 print(f"点击时发生错误: {e}")
